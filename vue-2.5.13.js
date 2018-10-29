@@ -9880,6 +9880,7 @@ function genHandler (
     var code = '';
     var genModifierCode = '';
     var keys = [];
+    debugger
     for (var key in handler.modifiers) {
       if (modifierCode[key]) {
         genModifierCode += modifierCode[key];
@@ -9921,6 +9922,7 @@ function genKeyFilter (keys) {
 }
 
 function genFilterCode (key) {
+  debugger
   var keyVal = parseInt(key, 10);
   if (keyVal) {
     return ("$event.keyCode!==" + keyVal)
