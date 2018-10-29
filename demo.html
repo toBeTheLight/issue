@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    vue-2.5.13
+    <input type="text" id="vue2513" @keydown.enter="keydownHandle">
+  </div>
+  <div>
+    vue-2.5.14
+    <input type="text" id="vue2514" @keydown.enter="keydownHandle">
+  </div>
+  <div>
+      vue-2.5.17
+      <input type="text" id="vue2517" @keydown.enter="keydownHandle">
+    </div>
+  <script src="./vue-2.5.13.js"></script>
+  <script src="./vue-2.5.14.js"></script>
+  <script src="./vue-2.5.17.js"></script>
+  <script>
+  new Vue2513({
+    el: '#vue2513',
+    methods: {
+      keydownHandle () {
+        console.log('keydown')
+      }
+    }
+  })
+  new Vue2514({
+    el: '#vue2514',
+    methods: {
+      keydownHandle () {
+        console.log('keydown')
+      }
+    }
+  })
+  new Vue2517({
+    el: '#vue2517',
+    methods: {
+      keydownHandle () {
+        console.log('keydown')
+      }
+    }
+  })
+  </script>
+</body>
+</html>
